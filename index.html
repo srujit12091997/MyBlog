@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Srujit's Blog</h1>
+        </header>
+
+        <div class="create-post">
+            <div class="input-group">
+                <input type="text" id="post-title" placeholder="Enter post title">
+            </div>
+            <div class="input-group">
+                <textarea id="post-content" placeholder="Write your post content here..."></textarea>
+            </div>
+            <button onclick="createPost()">Publish Post</button>
+        </div>
+
+        <div class="posts" id="posts-container">
+            <!-- Posts will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
